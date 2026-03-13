@@ -1,0 +1,285 @@
+:root {
+  --fuenteHeading: "Zalando Sans Expanded", sans-serif;
+  --fuenteParrafos: "Happy Monkey", system-ui;
+
+  --blanco: #f9f8f6;
+  --negro: #222222;
+  --cafe: #452829;
+  --gris: #b2b2b2;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1 rem = 10*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/*Globales*/
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2;
+}
+h4 {
+  font-size: 2.8;
+}
+/*Utilidades*/
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+/*Header*/
+.webp .header{
+  background-image: url(../img/banner.webp);
+}
+.no-webp .header{
+  background-image: url(../img/banner.jpg);
+}
+.header {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /*adapta la img a diferntes pantallas*/
+}
+.header__titulo {
+  color: var(--blanco);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header__titulo {
+    margin-top: 12rem;
+  }
+}
+
+.barra {
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
+  color: var(--blanco);
+}
+.logo__titulo {
+  font-weight: 400;
+  padding-top: 1.5;
+}
+.logo__bold {
+  color: #fff;
+  font-weight: 700;
+}
+
+.navegacion {
+  margin-bottom: 2rem;
+}
+.navegacion__enlaces {
+  display: block;
+  color: var(--blanco);
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+/*blog*/
+@media (min-width: 768px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+.entrada {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+.entrada:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--fuenteHeading);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block; /*permite el uso de margenes y width*/
+    padding: 1rem 4rem;
+  }
+}
+.btn--primario {
+  background-color: var(--negro);
+  width: auto;
+}
+.btn--secundario {
+  background-color: var(--cafe);
+}
+ul {
+  list-style: none;
+}
+.widget-curso__text,
+.curso__text {
+  font-weight: bolder;
+}
+.widget-curso_info,
+.curso_info {
+  font-weight: 300;
+}
+.widget-curso {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+/*Footer*/
+footer {
+  margin-top: 4rem;
+  background-color: #000;
+}
+
+/*Sobre nosotros*/
+@media (min-width: 768px) {
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+/*Cursos*/
+.curso {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+}
+.curso:last-of-type{
+  border: none;
+}
+@media (min-width: 768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+
+/*entrada*/
+@media (min-width: 1440px) {
+  .entrada-img{
+    /*display: block;
+    margin: 0 auto;*/ /*para centrar y reducir el tamaño*/
+
+    max-width: 60%;
+    float: left;
+    margin-right: 2rem;
+
+  }
+}
+
+/*contacto*/
+.contacto-bg{
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formulario{
+  margin: -5rem auto 0 auto;
+  background: var(--blanco);
+  width: 95%;
+  padding: 4rem;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+}
+.campo__inp{
+  flex: 1;
+  border: 1px solid var(--gris);
+  margin-bottom: 2rem;
+  min-width: 0; /*siempre en flex items para que se achiquen correctamente*/
+}
+@media (min-width: 768px) {
+  .campo{
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+.campo__label{
+  flex: 0 0 9rem;
+  text-align: right;
+}
+}
+
+.campo__textarea{
+  height: 20rem;
+}
+
+.btn-form:hover{
+  cursor: pointer;
+}
+.btn-form{
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .btn-form{
+  width: auto;
+}
+}
