@@ -9,5 +9,5 @@ let nombre = ''; // declarando un string vacio para usarlo despues
 nombre = 'Pablo' // asignamos el valor (no volvemos a declarar la variable 'let' esta la declaramos en la linea 8)
 
 // las variables con 'let' o 'var' se pueden REASIGNAR
-nombre = 'David';
+nombre = 16;
 

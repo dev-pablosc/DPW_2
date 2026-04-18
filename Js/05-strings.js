@@ -17,7 +17,7 @@ console.log(`Hola ${nombre} ${saludo} de nuevo...`); // interpolacion con simbol
 // Metodos de strings
 
 // longitud
-let tamaño = nombre.length;
+let tamaño = nombre.length();
 console.log(tamaño); // NO CUENTA DESDE CERO, cuenta desde 1
 
 // como un array se puede acceder mediante el indice
