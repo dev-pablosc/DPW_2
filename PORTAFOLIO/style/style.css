@@ -1,0 +1,39 @@
+.container{
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+
+/* font-family: "Elms Sans", sans-serif; */
+/* font-family: "Bruno Ace SC", sans-serif; */
+
+nav{
+  margin-top: 20px;
+}
+a{
+  margin: 10px;
+  font-family: "Elms Sans", sans-serif;
+}
+header, main{
+  text-align: center;
+}
+h1, h2{
+  font-family: "Bruno Ace SC", sans-serif;
+}
+p{
+  font-family: "Elms Sans", sans-serif;
+}
+
+.card{
+  display: inline-block;
+  width: 30%;
+}
+img{
+  width: 200px;
+}
+footer{
+  background-color: khaki;
+  text-align: center;
+  padding: 25px;
+}
