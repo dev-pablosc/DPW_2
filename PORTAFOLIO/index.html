@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,8 @@
   <!-- Google Font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Michroma&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Michroma&display=swap"
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,49 +22,58 @@
 </head>
 
 <body>
-  <header class="container">
+  <!-- Menu COMUN en todas las paginas -->
+  <header>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Proyectos</a>
-      <a href="#">Habilidades</a>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./equipo.html">Mi Equipo</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-    <h1>Hola soy Pablo 👋</h1>
-    <p>Soy desarrollador FrontEnd, de la ciudad de Sucre, tengo un interese en la ciberseguirdad lo que me permite
-      contruir aplicacion seguras. <br>Tengo un equipo de hackathones formado por 3 personas un de Cochabamba y 2 de
-      Sucre</p>
   </header>
-  <main class="container">
+
+  <main>
     <section>
-      <h2>Mis Habilidad</h2>
-      <p>Estas son algunas de mis habilidades</p>
-      <!-- Cards -->
-      <div>
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="assets\img\front.png" alt="">
-          <p>Desarrolo FrontEnd</p>
-          <p>Creo Aplicacion Web un Diseño Moderno</p>
-          <p><a href="#">Ver Mas</a></p>
+      <h1>Ponte en Contacto</h1>
+      <p>¿Tienes alguna consulta sobre los cursos, proyectos de desarrollo web o auditorías de ciberseguridad? Puedes
+        escribirme directamente a través del siguiente formulario:</p>
+    </section>
+
+    <section>
+      <!-- Formulario -->
+      <form action="#" method="POST">
+        <div>
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
         </div>
-        <!-- card 2 -->
-        <div class="card">
-          <img src="assets/img/cyber.jpg" alt="">
-          <p>Desarrolo FrontEnd</p>
-          <p>Creo Aplicacion Web un Diseño Moderno</p>
-          <p><a href="#">Ver Mas</a></p>
+
+        <div>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
         </div>
-        <!-- Card 3 -->
-        <div class="card">
-          <img src="assets/img/hackathon.png" alt="">
-          <p>Desarrolo FrontEnd</p>
-          <p>Creo Aplicacion Web un Diseño Moderno</p>
-          <p><a href="#">Ver Mas</a></p>
+
+        <div>
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje">
         </div>
-      </div>
+
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Enviar Formulario</button>
+        </div>
+      </form>
+
     </section>
   </main>
-  <!-- Footer -->
-  <footer>Diseñado por Pablo ®️ - 2026</footer>
+
+  <footer>
+    <p>&copy; 2026 Pablo Sanchez | Sucre, Bolivia</p>
+  </footer>
 </body>
 
 </html>
