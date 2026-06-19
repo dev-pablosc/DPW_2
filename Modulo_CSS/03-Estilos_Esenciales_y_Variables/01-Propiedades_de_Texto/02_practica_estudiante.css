@@ -1,0 +1,70 @@
+/* ========================================================================
+   PRÁCTICA: ESTILOS DE TEXTO
+   Sigue los pasos comentados dentro de cada selector para completar 
+   el diseño de este anuncio promocional.
+   ======================================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.anuncio-promocional {
+    border: 2px dashed #bdc3c7;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.titular {
+    /* PASO 1:
+       - Centra el texto (text-align)
+       - Cambia el tamaño de fuente a 40px (font-size)
+       - Transforma todo el texto a MAYÚSCULAS (text-transform)
+       - Cambia el color a un tono naranja: #e67e22
+    */
+
+}
+
+.subtitular {
+    /* PASO 2:
+       - Centra el texto
+       - Aumenta el tamaño de fuente a 20px
+       - Pon el texto en cursiva (font-style)
+    */
+
+}
+
+.destacado {
+    /* PASO 3: (Hay dos opciones correctas para poner en negrita, usa la que prefieras)
+       - Pon el texto en negrita (font-weight: bold o font-weight: 700)
+       - Cambia el color a rojo: #c0392b
+    */
+
+}
+
+.terminos {
+    /* PASO 4:
+       - Reduce el tamaño de fuente a 12px
+       - Justifica el texto (text-align)
+       - Aumenta el interlineado a 1.5 (line-height) para mejor lectura
+       - Cambia el color a gris: #7f8c8d
+    */
+
+}
+
+.boton-comprar {
+    /* PASO 5:
+       - Quita la línea de subrayado del enlace (text-decoration)
+       - Transforma el texto a MAYÚSCULAS (text-transform)
+       - Pon el texto en negrita (font-weight)
+    */
+    
+    /* Estos estilos base ya te los regalamos: */
+    display: block;
+    text-align: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
