@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio en Clase - Cascada y Especificidad</title>
     <style>
+        /* >> 1: LA HERENCIA (Inheritance)
+        Algunas propiedades se heredan de padres a hijos automáticamente. */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a4c3f2;
+            color: #333333;
+            /* Los hijos heredarán este color de texto oscuro */
+        }
+
+        /* >> 2: LA CASCADA (Orden de aparición)
+        Si dos reglas tienen el mismo "peso", la última que se escribe 
+        en el archivo es la que se aplica (vence a la anterior).*/
+        .noticia {
+            background-color: #e3f2fd;
+            /* Azul claro (Se descarta) */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .noticia {
+            background-color: #ffffff;
+            /* Blanco (Este gana por estar abajo) */
+        }
+
+        /* >> 3: LA ESPECIFICIDAD (El sistema de puntos/pesos)
+        No siempre gana el último. CSS calcula qué selector es más "específico".
+        Jerarquía básica de peso: Etiqueta (1 punto) < Clase (10 puntos) < ID (100 puntos)
         
+        ejemplo
+        A) Selector de etiqueta (p): Vale 1 punto.
+        B) Selector de clase (.texto-principal): Vale 10 puntos. Gana a la etiqueta.
+        C) Selector de ID (#alerta-urgente): Vale 100 puntos. Gana a la clase. */
+
+        /* Caso A: Etiqueta (1 punto) */
+        p {
+            color: #7f8c8d;
+            /* Gris */
+        }
+
+        /* Caso B: Clase (10 puntos) -> Aunque esté abajo, gana al selector 'p' */
+        .texto-principal {
+            color: #2c3e50;
+            /* Azul oscuro */
+            font-size: 18px;
+        }
+
+        /* Caso C: ID (100 puntos) -> La mayor especificidad en la hoja de estilos */
+        #alerta-urgente {
+            color: #e74c3c;
+            /* Rojo */
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="noticia">
         <h2>Titular de la Noticia</h2>
-        
+
         <p id="alerta-urgente" class="texto-principal">
             ATENCIÓN: Este texto demuestra cómo un ID vence a una clase, y una clase vence a una etiqueta.
         </p>
-        
+
         <p>
             Este es un párrafo secundario que simplemente adopta el estilo básico de la etiqueta.
         </p>
     </div>
 
 </body>
+
 </html>

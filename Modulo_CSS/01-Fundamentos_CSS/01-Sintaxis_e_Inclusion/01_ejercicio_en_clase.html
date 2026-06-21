@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio en Clase - Sintaxis CSS</title>
+
+    <style>
+        /* Selector de etiqueta: Afecta a todo el cuerpo de la página */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            /* Color gris claro de fondo */
+            color: #333333;
+            /* Color de texto principal gris oscuro */
+        }
+
+        /* Selector de clase: Comienza con un punto (.) */
+        .tarjeta-bienvenida {
+            background-color: #ffffff;
+            /* Fondo blanco para contrastar */
+            max-width: 500px;
+            /* Ancho máximo de la caja */
+            margin: 40px auto;
+            /* Centra la caja horizontalmente */
+            padding: 20px;
+            /* Espacio interno */
+            border-radius: 10px;
+            /* Bordes redondeados */
+        }
+
+        .titulo-leccion {
+            color: #007bff;
+            /* Color azul */
+            margin-top: 0;
+            /* Quita el espacio superior por defecto */
+        }
+    </style>
+
 </head>
+
 <body>
 
     <div class="tarjeta-bienvenida">
-        
-        <h1 class="titulo-leccion">¡Bienvenidos a CSS desde Cero!</h1>
-        
-        <p>En esta lección aprenderemos las tres formas de incluir estilos en nuestro documento HTML y la estructura básica de una regla de diseño.</p>
 
-        <p>
+        <h1 class="titulo-leccion">¡Bienvenidos a CSS desde Cero!</h1>
+
+        <p>En esta lección aprenderemos las tres formas de incluir estilos en nuestro documento HTML y la estructura
+            básica de una regla de diseño.</p>
+
+        <p style="color: #ff5722; font-weight: bold;">
             Este párrafo usa CSS en línea. Es útil para pruebas, pero una mala práctica si se abusa de él.
         </p>
 
     </div>
 
 </body>
+
 </html>

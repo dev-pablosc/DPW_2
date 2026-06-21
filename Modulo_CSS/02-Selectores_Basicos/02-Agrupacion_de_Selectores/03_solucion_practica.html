@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Práctica: Tabla de Precios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f2f6;
+            padding: 20px;
+        }
+
+        /* Paso 1: Agrupación de etiquetas */
+        h2, h4 {
+            color: #2f3640;
+            margin-bottom: 10px;
+        }
+
+        /* Paso 2: Agrupación de clases estructurales */
+        .plan-basico, .plan-pro, .plan-vip {
+            background-color: #ffffff;
+            border: 1px solid #bdc3c7;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 15px; /* Extra para separar las cajas visualmente */
+        }
+
+        /* Paso 3: Agrupación de estilos base para botones */
+        .btn-comprar, .btn-probar {
+            border: none;
+            padding: 10px 20px;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Paso 4: Estilos individuales que se suman a la base agrupada */
+        .btn-comprar {
+            background-color: #3498db;
+        }
+
+        .btn-probar {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Elige tu Plan Ideal</h2>
+
+    <div class="plan-basico">
+        <h4>Plan Básico</h4>
+        <p>Ideal para emprendedores que recién comienzan.</p>
+        <button class="btn-probar">Probar Gratis</button>
+    </div>
+
+    <div class="plan-pro">
+        <h4>Plan Profesional</h4>
+        <p>Para negocios en crecimiento que necesitan más herramientas.</p>
+        <button class="btn-comprar">Comprar Plan Pro</button>
+    </div>
+
+    <div class="plan-vip">
+        <h4>Plan VIP (Agencias)</h4>
+        <p>Solución completa para gestionar múltiples marcas.</p>
+        <button class="btn-comprar">Comprar Plan VIP</button>
+    </div>
+
+</body>
+</html>

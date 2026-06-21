@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio en Clase - Agrupación de Selectores</title>
     <style>
 
+        /* AGRUPACIÓN DE SELECTORES
+        Cuando varios elementos necesitan exactamente el mismo diseño, 
+        podemos agruparlos separándolos con una COMA (,). 
+        Esto ahorra líneas de código y facilita el mantenimiento. */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+        }
+
+        /* Hay dos formas correctas de hacer esto. 
+        Opción 1 (Separada): Escribir h1 { color: #2c3e50; } y luego h2 { color: #2c3e50; }
+        Opción 2 (Agrupada): Escribir h1, h2 { color: #2c3e50; }
+        Ambas funcionan y son correctas, pero la agrupada es más eficiente y profesional.
+        */
+
+        /* Agrupando etiquetas HTML */
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Agrupando clases para estilos base compartidos */
+        .servicio-seo,
+        .servicio-redes,
+        .servicio-branding {
+            background-color: #ffffff;
+            border: 1px solid #dcdde1;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        /* También es totalmente correcto y válido agrupar 
+        diferentes TIPOS de selectores (una etiqueta, una clase y un ID a la vez). */
+        span,
+        .texto-resaltado,
+        #aviso-legal {
+            font-style: italic;
+            color: #7f8fa6;
+        }
     </style>
 </head>
+
 <body>
 
     <h1>Nuestros Servicios de Agencia</h1>
@@ -33,4 +78,5 @@
     <p id="aviso-legal">Términos y condiciones aplicables.</p>
 
 </body>
+
 </html>

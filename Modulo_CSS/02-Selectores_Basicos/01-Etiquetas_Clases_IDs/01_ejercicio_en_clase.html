@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio en Clase - Selectores Básicos</title>
     <style>
+        /* 1. SELECTORES DE ETIQUETA (Tags)
+        Afectan a TODOS los elementos de ese tipo en la página.
+        Contra: Son muy amplios. Útiles para establecer tipografías o reseteos básicos, 
+        pero malos para diseños específicos. */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-transform: uppercase; /* Tip extra: Mayúsculas automáticas */
+        }
+
+        /* 2. SELECTORES DE CLASE (.clase)
+        El uso mas COMUN para CSS! Se usan para elementos REUTILIZABLES.
+        Mismo estilo aplicado a múltiples tarjetas de una campaña. */
+        .tarjeta-promo {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sutil sombra para dar volumen */
+        }
+
+        /* Clases de Utilidad (Utility classes): Tambien se pueden usar para una sola cosa */
+        .texto-destacado {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* 3. SELECTORES DE ID (#id)
+        Son ÚNICOS. Solo puede haber un elemento con ese ID por página.
+        Sirven para secciones principales (ej. #cabecera-principal, #formulario-contacto).
         
+        (Dos opciones correctas):
+        Si queremos destacar la promoción principal, hay dos formas correctas de hacerlo:
+        Opción A: Usar un ID (#promo-lanzamiento) porque es única en la página.
+        Opción B: Usar una clase modificadora (.tarjeta-promo-especial) junto a la clase base.
+        Ambas son válidas en la industria, aunque hoy en día se prefieren las clases.
+        Aquí usaremos un ID para practicar su sintaxis. */
+        #promo-lanzamiento {
+            border: 2px solid #f39c12; /* Borde naranja */
+            background-color: #fffdf7; /* Fondo */
+        }
     </style>
 </head>
 <body>
