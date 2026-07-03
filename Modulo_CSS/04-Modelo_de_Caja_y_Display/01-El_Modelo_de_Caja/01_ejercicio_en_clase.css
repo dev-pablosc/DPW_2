@@ -1,0 +1,62 @@
+/* EL MODELO DE CAJA
+  1. PADDING: Espacio entre el texto y el borde de la caja (adentro).
+  2. BORDER: La pared de la caja.
+  3. MARGIN: Espacio entre esta caja y las cajas vecinas (afuera).
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+  padding: 20px;
+}
+
+.caja-modelo {
+  background-color: #ffffff;
+
+  /* EL BORDE (BORDER) */
+
+  /* Opción 1: Extensa (Propiedad por propiedad) */
+  /*
+    
+
+
+  */
+
+  /* Opción 2: Shorthand (Atajo - La más común y recomendada) */
+  
+
+  /* EL RELLENO (PADDING) - Espacio interno */
+
+  /* Opción 1: 4 valores (Arriba | Derecha | Abajo | Izquierda) */
+  
+
+  /* Opción 2: 3 valores (Arriba | Izquierda/Derecha | Abajo) */
+
+
+  /* Opción 3: 2 valores (Arriba/Abajo | Izquierda/Derecha) */
+
+
+  /* Opción 4: 1 valor (Todos los lados iguales) */
+
+
+  /* Opción 5: Específica por lado (Para sobreescribir algo puntual) */
+
+
+  /* EL MARGEN (MARGIN) - Espacio externo */
+
+  /* Centrado horizontal automático (Solo funciona si la caja tiene un width definido) */
+
+
+  /* Opción común: 2 valores -> 40px (Arriba y abajo) | auto (Izquierda y derecha se reparten por igual) */
+
+
+  /* Sombras (Box-shadow): Un extra visual que no afecta al modelo de caja matemáticamente */
+
+}
+
+.caja-modelo h3 {
+
+
+  /* Un borde inferior para separar el título del texto */
+
+}

@@ -1,0 +1,55 @@
+/*  FLEXBOX (LOS ELEMENTOS) */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.contenedor-metricas {
+    
+    
+}
+
+.metrica {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* CRECIMIENTO Y DISTRIBUCIÓN (flex-grow, flex-shrink, flex-basis) */
+
+
+/* Para configurar cómo un elemento flex maneja su tamaño, existen dos formas 
+  correctas. La forma larga (propiedad por propiedad) y la forma abreviada (shorthand).*/
+
+.secundaria {
+    /* Opción 1: Declaración explícita (Larga) */
+
+    
+    /* Opción 2: Shorthand (Equivalente exacto y recomendado) */
+
+}
+
+.principal {
+    /* Hacemos que la métrica principal crezca el doble de rápido que las secundarias.
+  
+    */
+
+}
+
+/* REORDENAMIENTO VISUAL (order) */
+.secundaria:last-child {
+    /* Movemos la métrica de 'Rebotes' al principio de la fila visualmente.
+
+    */
+}
+
+/* ALINEACIÓN INDIVIDUAL (align-self) */
+.principal {
+    /* Si el contenedor tuviera una altura fija y align-items: flex-start, 
+       esto forzaría a este elemento en particular a estirarse o centrarse. */
+
+}

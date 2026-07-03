@@ -1,0 +1,43 @@
+/* POSICIONAMIENTO RELATIVO Y ABSOLUTO
+  Por defecto, todos los elementos tienen 'position: static'.
+  Para sacar un elemento del flujo normal y moverlo con coordenadas (top, left, etc.),
+  necesitamos cambiar su tipo de posicionamiento. */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 60px;
+    background-color: #f5f6fa;
+}
+
+/* EL CONTENEDOR PADRE (position: relative)
+
+  'relative' actúa como un "ancla" o marco de contención.*/
+.tarjeta-promocion {
+    
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contenido {
+    padding: 25px;
+}
+
+/* EL ELEMENTO HIJO (position: absolute)
+  Se remueve por completo del flujo. Los demás elementos actúan 
+  como si este no existiera. Se posiciona usando top, bottom, left o right.
+   ========================================================================== */
+.etiqueta-oferta {
+    
+    top: 15px;
+    right: 15px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+

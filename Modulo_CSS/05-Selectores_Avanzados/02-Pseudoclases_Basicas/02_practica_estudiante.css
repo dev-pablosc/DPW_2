@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #eaf2f8;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #bdc3c7;
+    margin-bottom: 15px;
+    outline: none; 
+}
+
+.boton-enviar {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.lista-beneficios li {
+    padding: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* REQUERIMIENTOS DE INTERACTIVIDAD Y ESTRUCTURA:
+
+1. Foco en campo de texto: Modificar el color del borde de '.campo-texto' exclusivamente cuando reciba interacción de foco por parte del usuario.
+2. Interacción en botón: Configurar el cambio a un color de fondo más oscuro para '.boton-enviar' durante el estado de superposición (cursor encima).
+3. Activación de botón: Modificar el color de fondo de '.boton-enviar' para simular su depresión en el momento exacto de la interacción de clic.
+4. Diseño alterno en lista: Aplicar un color de fondo tenue a los elementos impares de '.lista-beneficios' para establecer un patrón visual de lectura alterna. 
+   (Nota: Hay opciones correctas equivalentes en la nomenclatura para valores impares: puede utilizar la sintaxis '(odd)' o la fórmula matemática '(2n+1)').
+*/

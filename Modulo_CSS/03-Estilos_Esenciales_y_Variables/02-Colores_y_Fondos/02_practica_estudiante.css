@@ -6,21 +6,21 @@ body {
 
 .tarjeta-testimonio {
     /* PASO 1: 
-       - Dale a la tarjeta un color de fondo blanco usando Hexadecimal (#ffffff).
-       - Añade un ancho de 350px (width: 350px).
-       - Centra la tarjeta (margin: 0 auto).
-       - (Opcional) Añade border-radius de 10px y overflow: hidden para recortar bordes.
+- Dale a la tarjeta un color de fondo blanco usando Hexadecimal (#ffffff).
+- Añade un ancho de 350px (width: 350px).
+- Centra la tarjeta (margin: 0 auto).
+- (Opcional) Añade border-radius de 10px y overflow: hidden para recortar bordes.
     */
 
 }
 
 .cabecera-testimonio {
     /* PASO 2:
-       - Configura una altura (height) de 150px.
-       - Añade un color de fondo (background-color) usando RGB: rgb(52, 152, 219)
-       - Opcional: En lugar de un color sólido, intenta usar 'background-image' con esta URL: 
-         url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')
-       - Si usas la imagen, asegúrate de añadir: background-size: cover;
+    - Configura una altura (height) de 150px.
+    - Añade un color de fondo (background-color) usando RGB: rgb(52, 152, 219)
+    - Opcional: En lugar de un color sólido, intenta usar 'background-image' con esta URL: 
+        url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')
+    - Si usas la imagen, asegúrate de añadir: background-size: cover;
     */
 
 }
@@ -33,16 +33,16 @@ body {
 
 .cita {
     /* PASO 3:
-       - Cambia el color del texto a un gris oscuro usando Hexadecimal (#333333).
-       - Cambia la fuente a cursiva (font-style: italic).
+    - Cambia el color del texto a un gris oscuro usando Hexadecimal (#333333).
+    - Cambia la fuente a cursiva (font-style: italic).
     */
 
 }
 
 .cliente {
     /* PASO 4:
-       - Cambia el color del texto a un tono azul corporativo usando la opción que prefieras (Hex, RGB o HSL). Sugerencia: #2980b9
-       - Pon el texto en negrita (font-weight: bold).
+    - Cambia el color del texto a un tono azul corporativo usando la opción que prefieras (Hex, RGB o HSL). Sugerencia: #2980b9
+    - Pon el texto en negrita (font-weight: bold).
     */
 
 }

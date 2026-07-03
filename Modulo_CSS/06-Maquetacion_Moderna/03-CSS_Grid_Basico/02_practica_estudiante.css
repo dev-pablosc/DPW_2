@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #ecf0f1;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.panel-herramientas {
+    
+    /* REQUERIMIENTOS DE DISEÑO (ESTRUCTURA GRID):
+    1. Establecer el contexto de formato de cuadrícula (Grid) para este contenedor.
+    2. Configurar la estructura para que los elementos hijos se distribuyan exactamente en 2 columnas de anchos idénticos, utilizando unidades fraccionales.
+       (Nota: Se admiten múltiples opciones correctas de sintaxis para la definición de columnas, ya sea de forma declarativa manual o mediante funciones de repetición).
+    3. Asignar una separación uniforme (brecha) de 25px tanto para filas como para columnas.
+    */
+    
+}
+
+.herramienta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 5px solid #3498db;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.herramienta h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.herramienta p {
+    color: #7f8c8d;
+    margin-bottom: 0;
+}

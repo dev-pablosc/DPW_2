@@ -1,0 +1,39 @@
+/* DISPLAY BÁSICO */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* 1. DISPLAY: BLOCK */
+.caja-bloque {
+    
+    background-color: #3498db;
+    color: white;
+
+
+
+}
+
+/* 2. DISPLAY: INLINE */
+.caja-linea {
+    
+    background-color: #f1c40f;
+    color: #333;
+    
+
+
+}
+
+/* 3. DISPLAY: INLINE-BLOCK */
+.caja-hibrida {
+    
+    background-color: #2ecc71;
+    color: white;
+    
+
+    
+    border: none;
+    cursor: pointer;
+}

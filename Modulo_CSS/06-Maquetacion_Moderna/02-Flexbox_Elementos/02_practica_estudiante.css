@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #ecf0f1;
+}
+
+.seccion-producto {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.bloque-informacion {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    
+    /* REQUERIMIENTOS DE DISEÑO (BLOQUES SECUNDARIOS):
+    1. Configurar estos elementos para que absorban 1 fracción del espacio disponible en el eje principal.
+       (Nota: Existen múltiples opciones correctas de sintaxis, ya sea empleando propiedades individuales como flex-grow o la propiedad abreviada 'flex').
+    */
+    
+}
+
+.bloque-destacado {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    
+    /* REQUERIMIENTOS DE DISEÑO (BLOQUE PRINCIPAL):
+    1. Configurar este elemento para que absorba el doble de espacio (2 fracciones) en comparación con los bloques de información secundarios.
+    2. Modificar el orden visual de este elemento para que se ubique al inicio de la interfaz, desplazando a los demás a su derecha, sin alterar la estructura del código HTML.
+       (Nota: Se admiten múltiples valores numéricos correctos para la propiedad correspondiente, siempre que el resultado visual ubique este elemento en la primera posición).
+    */
+    
+}
+
+.bloque-destacado h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.bloque-destacado button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}

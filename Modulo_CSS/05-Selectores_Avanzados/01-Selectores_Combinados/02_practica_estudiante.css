@@ -1,0 +1,19 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+}
+
+.menu-principal {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* REQUERIMIENTOS DE DISEÑO (EMPLEANDO SELECTORES COMBINADOS):
+
+1. Lista de navegación: Eliminar estilos de viñetas y espaciados internos (padding) predeterminados del elemento 'ul' contenido en '.menu-principal'.
+2. Elementos de lista: Alterar el flujo de los 'li' para que se posicionen horizontalmente y asignarles un margen de separación a la derecha.
+3. Enlaces principales: Eliminar la decoración de subrayado, establecer fuente en negrita y color específico para las etiquetas 'a' dentro de '.menu-principal'.
+   (Nota: Hay opciones correctas de distinta especificidad, como '.menu-principal a' o '.menu-principal ul li a'. Emplee la más óptima).
+4. Enlaces secundarios: Seleccionar y modificar únicamente el color del enlace contenido dentro de '.contenido-extra', preservando su subrayado nativo.
+*/

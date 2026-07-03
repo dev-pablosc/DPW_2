@@ -1,0 +1,49 @@
+/* PSEUDOCLASES BÁSICAS*/
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f4f6f7;
+}
+
+.tarjeta-producto {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* PSEUDOCLASES DE ESTADO (:hover, :active) */
+.boton-cta {
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+
+}
+
+/* :hover -> Cuando el cursor está sobre el elemento */
+
+
+
+/* :active -> En el momento exacto en que se hace clic (el botón se "hunde") */
+
+
+
+/* PSEUDOCLASES ESTRUCTURALES (:nth-child) */
+.lista-caracteristicas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-caracteristicas li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+

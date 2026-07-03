@@ -1,0 +1,42 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #f4f6f7;
+}
+
+.modulo-curso {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lista-requisitos {
+    list-style: none; /* Se ha eliminado la viñeta predeterminada */
+    padding-left: 0;
+}
+
+.lista-requisitos li {
+    padding: 8px 0;
+    color: #2c3e50;
+}
+
+.nota-importante {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 5px solid #ffeeba;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ========================================================================
+   REQUERIMIENTOS DE DISEÑO (EMPLEANDO PSEUDOELEMENTOS):
+   
+   1. Modificación de viñetas: Utilice un pseudoelemento para inyectar un carácter de marca de verificación ("✓ ") justo antes del texto de cada elemento 'li' dentro de '.lista-requisitos'. Configure el color de este carácter en verde (#27ae60) y aplique un formato de fuente en negrita.
+   (Nota de sintaxis: Recuerde que tanto la notación con un único símbolo de dos puntos (:) como la notación doble (::) son opciones técnicamente correctas para la implementación).
+
+   2. Indicador de Alerta: Utilice un pseudoelemento para inyectar el texto "ATENCIÓN: " al inicio del contenido dentro del bloque '.nota-importante'. Establezca el color de este texto inyectado en rojo oscuro (#c0392b). No altere el código HTML bajo ninguna circunstancia.
+   ======================================================================== */

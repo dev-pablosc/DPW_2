@@ -1,0 +1,18 @@
+/*  SELECTORES COMBINADOS */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    color: #333;
+}
+
+/* SELECTOR DESCENDIENTE (Espacio) */
+
+
+/* SELECTOR DE HIJO DIRECTO ( > )
+  Afecta SOLO a los elementos que son hijos inmediatos (primer nivel).
+*/
+
+
+
+/* AISLANDO ELEMENTOS */

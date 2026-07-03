@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.contenedor-notificaciones {
+    margin: 50px auto;
+    width: 100px;
+    text-align: center;
+}
+
+.icono-carrito {
+    font-size: 40px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* REQUERIMIENTOS DE DISEÑO (ANCLAJE):
+    1. Configurar este elemento para que funcione como el contenedor de referencia espacial 
+       (ancla) para cualquier subelemento posicionado de forma absoluta, sin alterar su 
+       flujo ni su posición actual en la pantalla.
+    */
+    
+}
+
+.contador-badge {
+    background-color: #e67e22;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-family: sans-serif;
+    
+    /* REQUERIMIENTOS DE DISEÑO (SUPERPOSICIÓN):
+    1. Extraer este elemento del flujo normal del documento para poder posicionarlo libremente.
+    2. Ubicar el elemento de manera que sobresalga en la esquina superior derecha del icono del carrito. 
+       Use un desfase de 0 píxeles respecto al límite superior y 0 píxeles respecto al límite derecho.
+       (Nota: Se admiten múltiples combinaciones de valores numéricos si decide usar valores negativos para una mayor precisión visual, pero el requerimiento base exige alinearlo a los extremos superiores derechos).
+    */
+    
+}

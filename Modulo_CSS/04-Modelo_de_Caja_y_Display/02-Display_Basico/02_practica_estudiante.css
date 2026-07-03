@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+.etiqueta {
+    background-color: #34495e;
+    color: white;
+    
+    /* REQUERIMIENTOS DE DISEÑO:
+    1. Modificar el comportamiento de visualización de esta clase para que el elemento respete dimensiones y márgenes verticales de caja, sin generar saltos de línea forzados (manteniendo la fluidez horizontal).
+    2. Establecer un espaciado interno (relleno) y una separación externa entre etiquetas. 
+    3. Aplicar bordes redondeados para estilizar el elemento con apariencia de píldora.
+    */
+    
+}

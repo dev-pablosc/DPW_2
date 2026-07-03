@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: #94a3b8;
+    height: 2000px; /* Inyección de altura para forzar scroll del documento */
+}
+
+.asistencia-soporte {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* REQUERIMIENTOS DE DISEÑO (COMPONENTE GLOBAL FLOTANTE):
+    1. Romper el flujo del elemento y fijarlo de manera absoluta con respecto a la ventana gráfica (Viewport).
+    2. El elemento debe permanecer estático en la esquina inferior derecha del Viewport de manera constante durante el scroll, desfasado 30px del límite inferior y 30px del derecho.
+    3. Garantizar mediante una propiedad de ordenamiento espacial que el elemento se mantenga en la capa superior del eje Z.
+    */
+}
+
+.layout-app {
+    padding: 60px 20px;
+}
+
+.tabla-datos {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.encabezado-tabla {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    
+    /* REQUERIMIENTOS DE DISEÑO (HEADER PERSISTENTE):
+    1. Configurar este elemento para que actúe bajo el comportamiento de posicionamiento híbrido (Sticky), permitiéndole desplazarse normalmente hasta interceptar el límite superior de la pantalla.
+    2. Establecer el umbral de activación exactamente en la coordenada 0 superior para que permanezca anclado al hacer scroll vertical en el documento.
+       (Nota: Existen dos opciones correctas para definir esta propiedad de anclaje, verifique el cumplimiento del estándar).
+    */
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #334155;
+}
