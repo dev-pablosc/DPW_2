@@ -7,12 +7,15 @@ body {
 }
 
 /* SELECTOR DESCENDIENTE (Espacio) */
-
+.articulo-noticia  p{
+  color: red;
+}
 
 /* SELECTOR DE HIJO DIRECTO ( > )
   Afecta SOLO a los elementos que son hijos inmediatos (primer nivel).
 */
-
-
+.caja-autor > p{
+  color: green;
+}
 
 /* AISLANDO ELEMENTOS */

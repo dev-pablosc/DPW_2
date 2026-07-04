@@ -16,21 +16,21 @@ body {
 
 input {
   display: block;
-
-
-  border: 2px solid #3498db;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid blue;
   margin-bottom: 20px;
   margin-top: 5px;
 }
 
 /* EL COMPORTAMIENTO POR DEFECTO (content-box) */
 .campo-roto {
-
+  box-sizing: content-box;
 }
 
 /* LA SOLUCIÓN (border-box) */
-.campo-arreglado {
-
+  .campo-arreglado {
+    box-sizing: border-box;
 }
 
 

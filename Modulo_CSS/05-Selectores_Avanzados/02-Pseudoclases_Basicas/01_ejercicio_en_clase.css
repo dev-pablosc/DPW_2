@@ -30,11 +30,18 @@ body {
 
 /* :hover -> Cuando el cursor está sobre el elemento */
 
-
+.boton-cta:hover {
+    background-color: rgb(152, 202, 185);
+    font-size: 2rem;
+    color: #000;
+}
 
 /* :active -> En el momento exacto en que se hace clic (el botón se "hunde") */
 
-
+.boton-cta:active {
+    background-color: rgb(216, 73, 30);
+    font-size: 0.5rem;
+}
 
 /* PSEUDOCLASES ESTRUCTURALES (:nth-child) */
 .lista-caracteristicas {
